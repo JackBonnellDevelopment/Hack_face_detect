@@ -36,7 +36,7 @@ int main(int argc, char** argv)
           cv::rectangle(frame, pt1, pt2, cv::Scalar(0, 255, 0));
         }
 
-
+          resize(frame, frame, Size(640,480));
           imshow("this is you, smile! :)", frame);
           if( waitKey(10) == 27 ) break; // stop capturing by pressing ESC 
          
